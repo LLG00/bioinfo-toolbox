@@ -1,52 +1,50 @@
+# Sequence Analysis
+
+Get started with sequence analysis, alignment and phylogenetics.
+
+---
+
 ## Sequence Visualization
 
-* **GeneRunner** – Sequence viewer/editor. Can translate DNA → protein (be sure to pick the correct reading frame). *Windows-only; installers often hosted on software repositories.*
+* **GeneRunner** – Sequence viewer/editor. Can translate DNA → protein (ensure correct reading frame). *Windows-only; installers often hosted on software repositories.*  
+  * [Download / info (Softpedia)](https://www.softpedia.com/get/Science-CAD/Gene-Runner.shtml)
 
-  * Download / info: Gene Runner (Softpedia). ([Softpedia][https://www.softpedia.com/get/Science-CAD/Gene-Runner.shtml])
-
-* **Jalview** – Alignment viewer and editor that highlights amino-acid conservation and many annotation/colour schemes. Best used *after* you generate alignments with a dedicated aligner.
-
-  * Website & docs: [https://www.jalview.org/](https://www.jalview.org/) (manual & downloads). ([jalview.org][https://www.jalview.org/help.html])
+* **Jalview** – Alignment viewer and editor highlighting amino-acid conservation and annotation/colour schemes. Best used *after* generating alignments with a dedicated aligner.  
+  * [Website & docs](https://www.jalview.org/)
 
 ---
 
 ## Sequence Alignment
 
-* **MAFFT** – Multiple-sequence aligner with several algorithms (choose method based on dataset size and accuracy needs). Use MAFFT for both nucleotide and protein alignments; consult docs for method selection (e.g., L-INS-i, FFT-NS-2).
+* **MAFFT** – Multiple-sequence aligner with several algorithms (choose method based on dataset size and accuracy needs). Works for nucleotide and protein sequences.  
+  * [Website & download](https://mafft.cbrc.jp/alignment/software/)
 
-  * Website & download: [https://mafft.cbrc.jp/alignment/software/](https://mafft.cbrc.jp/alignment/software/) . ([mafft.cbrc.jp][https://mafft.cbrc.jp/alignment/software/])
+* **trimAl** – Automated trimming of poorly aligned or gappy regions; recommended after alignment before downstream analysis.  
+  * [Docs / download](https://trimal.cgenomics.org/)  
+  * [Alternative docs](https://trimal.readthedocs.io/)
 
-* **trimAl** (trimming) – Automated trimming of poorly aligned or gappy regions before downstream phylogeny building; recommended as a step after alignment.
-
-  * Docs / download: [https://trimal.cgenomics.org/](https://trimal.cgenomics.org/) or [https://trimal.readthedocs.io/](https://trimal.readthedocs.io/) . ([trimal.cgenomics.org][https://trimal.cgenomics.org/])
-
-* **BLAST (NCBI)** – Standard suite for sequence similarity searches. Choose the algorithm that matches your query and database:
-
-  * `blastn` — nucleotide → nucleotide
-  * `blastp` — protein → protein
-  * `tblastn` — protein → translated nucleotide database
-  * `blastx` — translated nucleotide (as protein) → protein database
-  * Web and standalone executables available (use command-line BLAST for batch jobs).
-  * BLAST interface & docs: [https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) . ([blast.ncbi.nlm.nih.gov][https://blast.ncbi.nlm.nih.gov/Blast.cgi])
+* **BLAST (NCBI)** – Suite for sequence similarity searches. Choose the algorithm based on query and database:  
+  * `blastn` — nucleotide → nucleotide  
+  * `blastp` — protein → protein  
+  * `tblastn` — protein → translated nucleotide database  
+  * `blastx` — translated nucleotide → protein database  
+  * Web and standalone executables available.  
+  * [BLAST interface & docs](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
 ---
 
 ## Phylogenetics & Visualization
 
-* **iTOL (Interactive Tree Of Life)** – Web-based tree visualization/annotation tool with rich export and annotation options — great for polishing figures for presentations or papers.
+* **iTOL (Interactive Tree Of Life)** – Web-based tree visualization/annotation tool; great for polished phylogenetic figures.  
+  * [Website & docs](https://itol.embl.de/)
 
-  * Website / docs: [https://itol.embl.de/](https://itol.embl.de/) . ([itol.embl.de][https://itol.embl.de/])
-
-* **MEGA X** – Desktop software for constructing phylogenies (multiple inference methods), model testing, and basic sequence analyses. GUI + command-line options available for various OSes.
-
-  * Website & downloads: [https://www.megasoftware.net/](https://www.megasoftware.net/) . ([megasoftware.net][https://www.megasoftware.net/])
+* **MEGA X** – Desktop software for constructing phylogenies (various inference methods), model testing, and basic sequence analyses. GUI + command-line options.  
+  * [Website & downloads](https://www.megasoftware.net/)
 
 ---
 
-## Quick tips
+## Quick Tips
 
-* **Trim before tree-building.** Trim low-quality or ambiguously aligned regions (trimAl) to avoid artefacts in phylogenies. ([trimal.cgenomics.org][https://trimal.cgenomics.org/])
-* **Pick the right BLAST algorithm.** Understand whether your input and target DB are nucleotide or protein (BLASTn/blastp/tblastn/blastx). ([blast.ncbi.nlm.nih.gov][https://blast.ncbi.nlm.nih.gov/Blast.cgi])
-* **Align before visualizing.** Tools like Jalview expect an alignment input to show conservation; use MAFFT (or other aligners) first. ([mafft.cbrc.jp][https://mafft.cbrc.jp/alignment/software/])
-
-
+* **Trim before tree-building** – remove low-quality or ambiguously aligned regions (trimAl) to avoid phylogenetic artefacts.  
+* **Pick the right BLAST algorithm** – ensure input and target DB match (BLASTn/blastp/tblastn/blastx).  
+* **Align before visualizing** – Jalview expects aligned sequences; use MAFFT (or another aligner) first.
