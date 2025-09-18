@@ -4,7 +4,15 @@ Get started with sequence analysis, alignment and phylogenetics.
 
 ---
 
-## Sequence Visualization
+## Sequence Visualization and Search
+
+* **BLAST (NCBI)** – Suite for sequence similarity searches. Choose the algorithm based on query and database:  
+  * `blastn` — nucleotide → nucleotide  
+  * `blastp` — protein → protein  
+  * `tblastn` — protein → translated nucleotide database  
+  * `blastx` — translated nucleotide → protein database  
+  * Web and standalone executables available.  
+  * [BLAST interface & docs](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
 * **GeneRunner** – Sequence viewer/editor. Can translate DNA → protein (ensure correct reading frame). *Windows-only; installers often hosted on software repositories.*  
   * [Download / info (Softpedia)](https://www.softpedia.com/get/Science-CAD/Gene-Runner.shtml)
@@ -22,14 +30,6 @@ Get started with sequence analysis, alignment and phylogenetics.
 * **trimAl** – Automated trimming of poorly aligned or gappy regions; recommended after alignment before downstream analysis.  
   * [Docs / download](https://trimal.cgenomics.org/)  
   * [Alternative docs](https://trimal.readthedocs.io/)
-
-* **BLAST (NCBI)** – Suite for sequence similarity searches. Choose the algorithm based on query and database:  
-  * `blastn` — nucleotide → nucleotide  
-  * `blastp` — protein → protein  
-  * `tblastn` — protein → translated nucleotide database  
-  * `blastx` — translated nucleotide → protein database  
-  * Web and standalone executables available.  
-  * [BLAST interface & docs](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
 ---
 
