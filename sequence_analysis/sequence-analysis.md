@@ -17,15 +17,15 @@ Get started with sequence analysis, alignment and phylogenetics.
 * **GeneRunner** – Sequence viewer/editor. Can translate DNA → protein (ensure correct reading frame). *Windows-only; installers often hosted on software repositories.*  
   * [Download / info (Softpedia)](https://www.softpedia.com/get/Science-CAD/Gene-Runner.shtml)
 
-* **Jalview** – Alignment viewer and editor highlighting amino-acid conservation and annotation/colour schemes. Best used *after* generating alignments with a dedicated aligner.  
-  * [Website & docs](https://www.jalview.org/)
-
 ---
 
 ## Sequence Alignment
 
 * **MAFFT** – Multiple-sequence aligner with several algorithms (choose method based on dataset size and accuracy needs). Works for nucleotide and protein sequences.  
   * [Website & download](https://mafft.cbrc.jp/alignment/software/)
+ 
+* **Jalview** – Alignment viewer and editor highlighting amino-acid conservation and annotation/colour schemes. Best used *after* generating alignments with a dedicated aligner.  
+  * [Website & docs](https://www.jalview.org/)
 
 * **trimAl** – Automated trimming of poorly aligned or gappy regions; recommended after alignment before downstream analysis.  
   * [Docs / download](https://trimal.cgenomics.org/)  
